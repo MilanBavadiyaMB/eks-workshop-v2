@@ -146,7 +146,7 @@ resource "time_sleep" "wait_for_capability_role" {
     aws_iam_role_policy_attachment.ack_capability_dynamo,
   ]
 
-  create_duration = "60s"
+  create_duration = "30s"
 }
 
 # Enable the fully managed AWS Controllers for Kubernetes (ACK) capability.
